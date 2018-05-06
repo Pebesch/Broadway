@@ -8,6 +8,10 @@ html{
   font-family: Helvetica;
 }
 
+div p{
+  padding: 10px;
+}
+
 h1{
   font-size: 70px;
   font-weight: bold;
@@ -32,7 +36,11 @@ nav ul{
   list-style-image: none;
 }
 
-nav ul li a{
+nav ul li{
+  padding: 2px;
+}
+
+a{
   text-decoration: none;
   color: white;
 }
@@ -44,9 +52,17 @@ p{
 .copyright{
   font-size: 11px;
   color: white;
+  text-align: left;
+}
+
+.footer{
   background-color: dimgray;
 }
 
 .header, .designed{
   background-image: url("../images/the-flatiron-building.png");
+}
+
+.header, .information, .designed, .contact, .footer:not(div){
+  padding: 10px;
 }
